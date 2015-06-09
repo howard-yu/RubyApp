@@ -5,11 +5,11 @@
 		<td>Years</td>
 		<td>Birthday</td>
 	</tr>
-	<% @bpook.each do |p| %>
+	<% @bpooks.each do |p| %>
 	<tr>
-		<td>p.name</td>
-		<td>p.years</td>
-		<td>p.birthday</td>
+		<td><%= p.name %></td>
+		<td><%= p.years %></td>
+		<td><%= p.birthday %></td>
 	</tr>
 	<%end%>
 </table>

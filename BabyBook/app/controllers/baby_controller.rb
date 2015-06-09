@@ -1,5 +1,5 @@
 class BabyController < ApplicationController
   def index
-  	@bpook = Bpook.all
+  	@bpooks = Bpook.all
   end
 end
