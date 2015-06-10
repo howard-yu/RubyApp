@@ -1,0 +1,19 @@
+<h1>Modify the baby Detal</h1>
+<%= form_for @bpook, :url => {:controller => "baby", :action => "updateing", :id => @bpook }, :html => {:method =>:put} do |f| %>
+<div class="field">
+	<%= f.label :name %><br>
+	<%= f.text_field :name %>
+</div>
+<div class="text_field">
+	<%= f.label :years %><br>
+	<%= f.number_field :years %>
+</div>
+<div class="field">
+	<%= f.label :birthday %><br>
+	<%= f.text_field :birthday %>
+</div>
+<div>
+	<%= f.submit %>
+</div>
+<% end %>
+<p><%= link_to 'Back', baby_index_path %></p>
