@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+  get 'baby/newbaby'
   get 'baby/index'
+  get 'baby/modify/:id' => 'baby#modify'
+  get 'baby/del/:id' => 'baby#del'
+
+  post 'baby/create'
+  put 'baby/updateing/:id' => 'baby#updateing'
+  put 'baby/destoring/:id' => 'phone#destoring'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
