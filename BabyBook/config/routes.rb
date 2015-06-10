@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   post 'baby/create'
   put 'baby/updateing/:id' => 'baby#updateing'
-  put 'baby/destoring/:id' => 'phone#destoring'
+  put 'baby/destoring/:id' => 'baby#destoring'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
