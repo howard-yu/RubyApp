@@ -34,6 +34,6 @@ class BabyController < ApplicationController
   private
   
   def bpook_params
-	params.require(:bpook).permit(:name, :years, :birthday)
+	params.require(:bpook).permit(:name, :years, :birthday, :picture)
   end
 end

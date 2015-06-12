@@ -5,11 +5,12 @@
 		<td>Years</td>
 		<td>Birthday</td>
 	</tr>
-	<% @bpook.each do |p| %>
+	<% @bpooks.each do |p| %>
 	<tr>
 		<td><%= p.name %></td>
 		<td><%= p.years %></td>
 		<td><%= p.birthday %></td>
+		<td><%= image_tag p.picture_url(:thumb) if p.picture? %></td>
 		<td>
 			<%= link_to "edit", :action => "modify", :id => p %>/
 			<%= link_to "del", :action => "del", :id => p %>
